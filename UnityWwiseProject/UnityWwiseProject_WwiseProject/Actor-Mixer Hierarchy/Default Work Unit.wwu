@@ -1,6 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Enemies" ID="{6ADAC2E6-1ACD-48E8-AA8E-B7119B074963}" ShortID="973726727">
+					<ChildrenList>
+						<Folder Name="Chomper" ID="{DB8B61CB-5A7A-40EE-B491-33680D6FC9A9}" ShortID="121645478"/>
+						<Folder Name="Grenader" ID="{6B7E1E7F-59F0-4D74-9FF7-3A292A284729}" ShortID="366426049"/>
+						<Folder Name="Spitter" ID="{87494D1E-D144-4C34-95E0-8BB46D4B8775}" ShortID="434317578">
+							<ChildrenList>
+								<Folder Name="Animations" ID="{9D0A16D3-6EAD-4487-A7B9-52C0612DEEC5}" ShortID="769567807"/>
+								<Folder Name="Spit" ID="{BE9DA412-79F3-466E-BB6A-BD83177DE6B9}" ShortID="204123802"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{06606173-D553-44D5-9C89-3DF9EEDD24F5}" ShortID="144271703">
+					<ChildrenList>
+						<Folder Name="Footsteps" ID="{CC21B409-224F-46B8-A28E-0D773A9FC9A7}" ShortID="188822838">
+							<ChildrenList>
+								<SwitchContainer Name="Footsteps" ID="{F451CA98-315D-4431-A9D5-DD26DDAB92ED}" ShortID="398143949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Grass" ID="{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}" WorkUnitID="{9F0960E9-9726-4CE1-BB94-00A0E35C2FF1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Footsteps" ID="{2F4FB138-07AB-4CF7-8507-EB4D2679ABD0}" WorkUnitID="{9F0960E9-9726-4CE1-BB94-00A0E35C2FF1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Metal" ID="{3FFFB5E2-EF4E-43D3-81A7-501B9449EB31}" ShortID="212708617">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Grass" ID="{ED41A408-5735-44DA-88DD-C7DDEA8FEFD8}" ShortID="796840207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Hard Rock" ID="{A6CDBBF3-E3FF-44FF-9A48-E77C9C8D8FDB}" ShortID="466482602">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+												</Reference>
+											</ReferenceList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Grass" ID="{ED41A408-5735-44DA-88DD-C7DDEA8FEFD8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Metal" ID="{3FFFB5E2-EF4E-43D3-81A7-501B9449EB31}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Hard Rock" ID="{A6CDBBF3-E3FF-44FF-9A48-E77C9C8D8FDB}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Grass" ID="{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}"/>
+												<ItemList>
+													<ItemRef Name="Grass" ID="{ED41A408-5735-44DA-88DD-C7DDEA8FEFD8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Metal" ID="{15D8DADA-AF0A-469F-A0E6-ABBBCB9ADBC2}"/>
+												<ItemList>
+													<ItemRef Name="Metal" ID="{3FFFB5E2-EF4E-43D3-81A7-501B9449EB31}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="HardRock" ID="{0BC296FE-A5D9-4FA3-96F9-F4CEFF83DA2B}"/>
+												<ItemList>
+													<ItemRef Name="Hard Rock" ID="{A6CDBBF3-E3FF-44FF-9A48-E77C9C8D8FDB}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Animations" ID="{7F6EABFF-25FA-4672-86B1-387C12E7CC5D}" ShortID="606149132"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{CA906517-0E6C-47A4-B139-5ADF24708B62}" ShortID="510952453">
+					<ChildrenList>
+						<Folder Name="Fireflies" ID="{3DFD2B42-4E3A-4FDE-8E0A-850D52F61B52}" ShortID="268904082"/>
+						<Folder Name="Platforms" ID="{D089B344-E9E9-4A1D-A62E-4430077EB397}" ShortID="236072135"/>
+						<Folder Name="New Virtual Folder" ID="{75F3CBED-45FE-4787-BC79-7057F320CB0B}" ShortID="848249527"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{51EC771E-F430-45A6-B933-A2EF9762A8B8}" ShortID="671064856">
+					<ChildrenList>
+						<Sound Name="Quit" ID="{29D2A0B8-2FDC-4B6D-930D-502D5C75E1BE}" ShortID="101822685">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rescopicsound-ui-alert-menu-modern-interface-deny-large-230478" ID="{71D0A686-7525-4547-B6A2-1D1B3B69606D}">
+									<Language>SFX</Language>
+									<AudioFile>rescopicsound-ui-alert-menu-modern-interface-deny-large-230478.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="455191818"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rescopicsound-ui-alert-menu-modern-interface-deny-large-230478" ID="{71D0A686-7525-4547-B6A2-1D1B3B69606D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Back" ID="{7AEDD44A-D436-4C73-B6EA-3CC3B099DB08}" ShortID="148442848">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rescopicsound-ui-click-menu-modern-interface-select-large-230474" ID="{84BCD95B-9003-4951-91C1-006DC1667105}">
+									<Language>SFX</Language>
+									<AudioFile>rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="339234539"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rescopicsound-ui-click-menu-modern-interface-select-large-230474" ID="{84BCD95B-9003-4951-91C1-006DC1667105}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hover" ID="{93E94AA4-6211-463E-A634-59772BDF554C}" ShortID="775902503">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rescopicsound-ui-click-menu-modern-interface-select-medium-230477" ID="{A6B85BBF-070C-4402-9A73-5C2A259AAC74}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.038454935103868"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.038454935103868"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>rescopicsound-ui-click-menu-modern-interface-select-medium-230477.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="275119667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rescopicsound-ui-click-menu-modern-interface-select-medium-230477" ID="{A6B85BBF-070C-4402-9A73-5C2A259AAC74}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Select" ID="{5391961E-1E8B-420E-B5CB-3213372F9AE9}" ShortID="791939815">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="rescopicsound-ui-click-menu-modern-interface-select-small-01-230473" ID="{BB4CCC3D-6D3E-467F-98C7-0627A3C11486}">
+									<Language>SFX</Language>
+									<AudioFile>rescopicsound-ui-click-menu-modern-interface-select-small-01-230473.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="164208645"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="rescopicsound-ui-click-menu-modern-interface-select-small-01-230473" ID="{BB4CCC3D-6D3E-467F-98C7-0627A3C11486}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

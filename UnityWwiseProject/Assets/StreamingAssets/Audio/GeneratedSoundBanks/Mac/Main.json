@@ -1,0 +1,135 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{DEA5F361-0956-40FC-BC50-811D3A131C7C}",
+    "Language": "SFX",
+    "Hash": "{085AD9A8-15A1-7E22-4C55-1E9C73633D86}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "164208645",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "rescopicsound-ui-click-menu-modern-interface-select-small-01-230473.wav",
+      "CachePath": "EC/{ECEA9BD0-E7F0-F417-3FBF-0AF52894A845}.wem"
+     },
+     {
+      "Id": "260776739",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-hmms-various-1-7175.wav",
+      "CachePath": "C3/{C3B1AEDD-C8B7-0D61-2F14-A136EE77AD8A}.wem"
+     },
+     {
+      "Id": "275119667",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "rescopicsound-ui-click-menu-modern-interface-select-medium-230477.wav",
+      "CachePath": "1B/{1B75C43C-49C5-8D12-1A3F-D9EE66AA0A1A}.wem"
+     },
+     {
+      "Id": "339234539",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav",
+      "CachePath": "0C/{0CBE3548-B38C-0C1B-F1D6-88E0341A9696}.wem"
+     },
+     {
+      "Id": "455191818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "rescopicsound-ui-alert-menu-modern-interface-deny-large-230478.wav",
+      "CachePath": "05/{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "615124970",
+      "Name": "P_A_Thinking",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Thinking",
+      "GUID": "{183246E0-7BA7-42B5-924D-EE82604E2AAE}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3291342",
+      "DurationMax": "1.3291342",
+      "MediaRefs": [
+       {
+        "Id": "260776739"
+       }
+      ]
+     },
+     {
+      "Id": "3811330420",
+      "Name": "U_Back",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\U_Back",
+      "GUID": "{7C65127C-E1A1-4930-BF7A-BC750EC04D1B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3329225",
+      "DurationMax": "0.3329225",
+      "MediaRefs": [
+       {
+        "Id": "339234539"
+       }
+      ]
+     },
+     {
+      "Id": "2985878961",
+      "Name": "U_Hover",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\U_Hover",
+      "GUID": "{14863185-6D8D-4975-971C-FC7B4D6B67B0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63354504",
+      "DurationMax": "0.63354504",
+      "MediaRefs": [
+       {
+        "Id": "275119667"
+       }
+      ]
+     },
+     {
+      "Id": "2154340884",
+      "Name": "U_Quit",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\U_Quit",
+      "GUID": "{375C718F-67E9-493B-94C9-77B404A934C7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.008",
+      "DurationMax": "1.008",
+      "MediaRefs": [
+       {
+        "Id": "455191818"
+       }
+      ]
+     },
+     {
+      "Id": "3590788049",
+      "Name": "U_Select",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\U_Select",
+      "GUID": "{3C3D25A8-CF7C-43AC-863C-DB8403CF8603}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.30641273",
+      "DurationMax": "0.30641273",
+      "MediaRefs": [
+       {
+        "Id": "164208645"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E1289C8D-B96A-D645-F17C-BB50F28DF734}"
+ }
+}

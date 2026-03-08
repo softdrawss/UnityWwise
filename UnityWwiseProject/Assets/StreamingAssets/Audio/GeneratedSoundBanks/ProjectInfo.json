@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "UnityWwiseProject_WwiseProject",
+   "GUID": "{C0FEE1B0-C2CA-4CFB-89B9-504C2CEB25AA}",
+   "Generator": "2024.1.10.8979"
+  },
+  "CacheRoot": "../../../../UnityWwiseProject_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{09CE78AC-404B-4EA6-9CC4-6BFF0D099101}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{9B4F1371-3BE6-4420-B02F-3235B7847F16}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{60965B3B-416B-4EF9-999D-9324939C7026}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{EC02BF79-F3DC-0288-3969-A7914F4FF85E}"
+ }
+}

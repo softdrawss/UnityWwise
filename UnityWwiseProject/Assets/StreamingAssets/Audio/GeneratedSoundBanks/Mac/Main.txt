@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	615124970	P_A_Thinking			\Default Work Unit\Player\P_A_Thinking	
+	2154340884	U_Quit			\Default Work Unit\UI\U_Quit	
+	2985878961	U_Hover			\Default Work Unit\UI\U_Hover	
+	3590788049	U_Select			\Default Work Unit\UI\U_Select	
+	3811330420	U_Back			\Default Work Unit\UI\U_Back	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	164208645	Select	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\EC\{ECEA9BD0-E7F0-F417-3FBF-0AF52894A845}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Select		64252
+	260776739	freesound_community-hmms-various-1-7175	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\C3\{C3B1AEDD-C8B7-0D61-2F14-A136EE77AD8A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Animations\freesound_community-hmms-various-1-7175		117326
+	275119667	Hover	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\1B\{1B75C43C-49C5-8D12-1A3F-D9EE66AA0A1A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Hover		121736
+	339234539	Back	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\0C\{0CBE3548-B38C-0C1B-F1D6-88E0341A9696}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Back		69804
+	455191818	Quit	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\05\{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		193632
+

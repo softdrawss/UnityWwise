@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3161908922" Type="User" GUID="{DEA5F361-0956-40FC-BC50-811D3A131C7C}" Language="SFX" Hash="{BDE87FEF-9FD9-20F4-F8D1-531B03E5D5D7}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="164208645" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-small-01-230473.wav</ShortName>
+					<CachePath>B1/{B1CC00D4-CD64-31C1-2575-AD85A74937BE}.wem</CachePath>
+				</File>
+				<File Id="275119667" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-medium-230477.wav</ShortName>
+					<CachePath>4A/{4AB7FE09-2933-D84B-F5FA-DB5C009F6346}.wem</CachePath>
+				</File>
+				<File Id="339234539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav</ShortName>
+					<CachePath>47/{478005F0-B558-AC2C-1546-707BD36EB6DA}.wem</CachePath>
+				</File>
+				<File Id="455191818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-alert-menu-modern-interface-deny-large-230478.wav</ShortName>
+					<CachePath>05/{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3811330420" Name="U_Back" ObjectPath="\Events\Default Work Unit\UI\U_Back" GUID="{7C65127C-E1A1-4930-BF7A-BC750EC04D1B}" DurationType="OneShot" DurationMin="0.384" DurationMax="0.384">
+					<MediaRefs>
+						<MediaRef Id="339234539"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2985878961" Name="U_Hover" ObjectPath="\Events\Default Work Unit\UI\U_Hover" GUID="{14863185-6D8D-4975-971C-FC7B4D6B67B0}" DurationType="OneShot" DurationMin="0.672" DurationMax="0.672">
+					<MediaRefs>
+						<MediaRef Id="275119667"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2154340884" Name="U_Quit" ObjectPath="\Events\Default Work Unit\UI\U_Quit" GUID="{375C718F-67E9-493B-94C9-77B404A934C7}" DurationType="OneShot" DurationMin="1.008" DurationMax="1.008">
+					<MediaRefs>
+						<MediaRef Id="455191818"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3590788049" Name="U_Select" ObjectPath="\Events\Default Work Unit\UI\U_Select" GUID="{3C3D25A8-CF7C-43AC-863C-DB8403CF8603}" DurationType="OneShot" DurationMin="0.36" DurationMax="0.36">
+					<MediaRefs>
+						<MediaRef Id="164208645"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{AB9427A3-8B40-ABC0-7060-4C70DE96B208}</FileHash>
+</SoundBanksInfo>

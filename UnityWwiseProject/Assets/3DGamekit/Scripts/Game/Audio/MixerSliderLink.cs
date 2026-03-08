@@ -17,6 +17,9 @@ namespace Gamekit3D
 
         protected Slider m_Slider;
 
+        public string wwiseRTPCName;
+        public float maxValue = 100f;
+        public float minValue = 0f;
 
         void Awake ()
         {
@@ -34,6 +37,9 @@ namespace Gamekit3D
         void SliderValueChange(float value)
         {
             mixer.SetFloat(mixerParameter, minAttenuation + value * (maxAttenuation - minAttenuation));
+
+            // Wwise
+            AkUnitySoundEngine.SetRTPCValue(wwiseRTPCName, minValue + value * (maxValue - minValue));
         }
     }
 }
