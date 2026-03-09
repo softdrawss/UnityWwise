@@ -6,13 +6,18 @@ namespace Gamekit3D
     {
         void Start()
         {
-            var result = AkUnitySoundEngine.LoadBank("Main",  out uint bankID);
-            Debug.Log("Bank load result: " + result);
+            // JÚLIA: Implemented debug an see issues with banks and sounds not reproducing
+            //var result = AkUnitySoundEngine.LoadBank("Main",  out uint bankID);
+            //Debug.Log("Bank load result: " + result);
         }
 
         public void PlayHover()
         {
-            uint result = AkUnitySoundEngine.PostEvent("U_Hover", gameObject);
+            AkUnitySoundEngine.PostEvent("U_Hover", gameObject);
+
+            //Debug.Log("Hover event triggered");
+            //uint result = AkUnitySoundEngine.PostEvent("U_Hover", gameObject);
+            //Debug.Log($"PostEvent returned ID: {result}");
         }
 
         public void PlaySelect()

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DEA5F361-0956-40FC-BC50-811D3A131C7C}",
     "Language": "SFX",
-    "Hash": "{085AD9A8-15A1-7E22-4C55-1E9C73633D86}",
+    "Hash": "{D805145B-45DC-0693-7673-4B66E236B6E1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "freesound_community-hmms-various-1-7175.wav",
-      "CachePath": "C3/{C3B1AEDD-C8B7-0D61-2F14-A136EE77AD8A}.wem"
+      "CachePath": "82/{822545D7-E399-BC74-C589-D28825BBF6A2}.wem"
      },
      {
       "Id": "275119667",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav",
-      "CachePath": "0C/{0CBE3548-B38C-0C1B-F1D6-88E0341A9696}.wem"
+      "CachePath": "3C/{3CE30C01-CE38-A584-C11C-A58A18D26B1E}.wem"
      },
      {
       "Id": "455191818",
@@ -54,9 +54,45 @@
       "Location": "Memory",
       "ShortName": "rescopicsound-ui-alert-menu-modern-interface-deny-large-230478.wav",
       "CachePath": "05/{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem"
+     },
+     {
+      "Id": "626525727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.wav",
+      "CachePath": "49/{49FEC7E1-384C-4F73-416B-30C588891955}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "4013655675",
+      "Name": "P_A_Attack1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Attack1",
+      "GUID": "{E4C64539-615E-4566-A614-9EBFEC99B3AE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.52244896",
+      "DurationMax": "0.52244896",
+      "MediaRefs": [
+       {
+        "Id": "626525727"
+       }
+      ]
+     },
+     {
+      "Id": "4013655672",
+      "Name": "P_A_Attack2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Attack2",
+      "GUID": "{A09D99AB-30F7-4763-A33F-ECA4025E6E56}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.42929125",
+      "DurationMax": "0.42929125",
+      "MediaRefs": [
+       {
+        "Id": "626525727"
+       }
+      ]
+     },
      {
       "Id": "615124970",
       "Name": "P_A_Thinking",
@@ -130,6 +166,6 @@
     ]
    }
   ],
-  "FileHash": "{FC59722B-95E8-DC7A-D650-FD27858EBE30}"
+  "FileHash": "{E0B51F07-8006-E56E-C016-9FEBA2924056}"
  }
 }

@@ -102,7 +102,88 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Animations" ID="{7F6EABFF-25FA-4672-86B1-387C12E7CC5D}" ShortID="606149132"/>
+						<Folder Name="Animations" ID="{7F6EABFF-25FA-4672-86B1-387C12E7CC5D}" ShortID="606149132">
+							<ChildrenList>
+								<Sound Name="freesound_community-hmms-various-1-7175" ID="{E4F516BC-99F7-47BB-A9D6-F9AE5838DD42}" ShortID="484877915">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="freesound_community-hmms-various-1-7175" ID="{C0690889-72A0-4EEE-B407-9987B0372B03}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.712525405883789"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.04165958054212"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>freesound_community-hmms-various-1-7175.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260776739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="freesound_community-hmms-various-1-7175" ID="{C0690889-72A0-4EEE-B407-9987B0372B03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{5B632CDF-6060-4113-BD4B-07048C2E3A94}" ShortID="1677080">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{B4AAEC4E-CD70-4AE3-A4D9-C65852FF1C38}">
+											<Language>SFX</Language>
+											<AudioFile>phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="626525727"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{B4AAEC4E-CD70-4AE3-A4D9-C65852FF1C38}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720_01" ID="{F31F6CD3-BA69-404E-813E-CA79C19ED3CA}" ShortID="729327594">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>340</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{42A40A36-F86F-4DA2-A3C0-C6880834E702}">
+											<Language>SFX</Language>
+											<AudioFile>phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="626525727"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{42A40A36-F86F-4DA2-A3C0-C6880834E702}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{CA906517-0E6C-47A4-B139-5ADF24708B62}" ShortID="510952453">
@@ -115,6 +196,9 @@
 				<Folder Name="UI" ID="{51EC771E-F430-45A6-B933-A2EF9762A8B8}" ShortID="671064856">
 					<ChildrenList>
 						<Sound Name="Quit" ID="{29D2A0B8-2FDC-4B6D-930D-502D5C75E1BE}" ShortID="101822685">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
@@ -137,16 +221,29 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Back" ID="{7AEDD44A-D436-4C73-B6EA-3CC3B099DB08}" ShortID="148442848">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+									<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="rescopicsound-ui-click-menu-modern-interface-select-large-230474" ID="{84BCD95B-9003-4951-91C1-006DC1667105}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.0209454547275196"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0209454547275196"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav</AudioFile>
 									<MediaIDList>
@@ -159,12 +256,20 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Hover" ID="{93E94AA4-6211-463E-A634-59772BDF554C}" ShortID="775902503">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+									<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -186,16 +291,27 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Select" ID="{5391961E-1E8B-420E-B5CB-3213372F9AE9}" ShortID="791939815">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>150</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+									<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="rescopicsound-ui-click-menu-modern-interface-select-small-01-230473" ID="{BB4CCC3D-6D3E-467F-98C7-0627A3C11486}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0258545464819128"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>rescopicsound-ui-click-menu-modern-interface-select-small-01-230473.wav</AudioFile>
 									<MediaIDList>

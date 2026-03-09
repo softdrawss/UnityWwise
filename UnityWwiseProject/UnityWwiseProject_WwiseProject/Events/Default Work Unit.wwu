@@ -4,65 +4,101 @@
 		<WorkUnit Name="Default Work Unit" ID="{30095AB1-3413-4DD4-874B-86D503191CAD}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Player" ID="{2CB4DC66-2747-4270-B659-1D6D28ED7A24}" ShortID="137122484">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ChildrenList>
 						<Event Name="P_A_Thinking" ID="{183246E0-7BA7-42B5-924D-EE82604E2AAE}">
 							<ChildrenList>
-								<Action Name="" ID="{D44BDC7D-A2DD-428D-A16B-C0F1D133992A}" ShortID="704001966"/>
+								<Action Name="" ID="{D44BDC7D-A2DD-428D-A16B-C0F1D133992A}" ShortID="704001966">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="freesound_community-hmms-various-1-7175" ID="{E4F516BC-99F7-47BB-A9D6-F9AE5838DD42}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Idle" ID="{542D1A80-C778-4DAA-B892-17A0C06C43C2}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{61BA6D9F-9412-4C0F-9D9F-06B9B8537231}" ShortID="705870951"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Run" ID="{5A660236-B43F-47C4-B894-16138300408B}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{31064929-8AD1-470B-8B2D-75DEE75641FF}" ShortID="603435093"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Jump" ID="{D16A0627-4DE9-4C7E-9E67-3A13A8F6A24F}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{D5D109D0-1EC4-469A-BD25-B81F769CF60E}" ShortID="768704198"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Die" ID="{8EA607A2-A02F-476E-8812-6B9C05F8F6D4}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{B54F2935-6172-451E-B899-8C6F43FCB3B0}" ShortID="743282536"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Respawn" ID="{12A0D409-7A50-4945-9D34-F964CFEBB4AE}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{FA879883-A55B-479A-B81F-D83DD5D87CB5}" ShortID="290069385"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Roll" ID="{CAC7A874-7BD8-4C88-8ADA-1EEC45CD57E7}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{EDDAD035-7D1E-4DFB-9A51-DF2E50B1DD82}" ShortID="139198286"/>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Attack1" ID="{E4C64539-615E-4566-A614-9EBFEC99B3AE}">
 							<ChildrenList>
-								<Action Name="" ID="{A392193F-29B3-45A4-92F0-36705A5882AA}" ShortID="494047109"/>
+								<Action Name="" ID="{A392193F-29B3-45A4-92F0-36705A5882AA}" ShortID="494047109">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{5B632CDF-6060-4113-BD4B-07048C2E3A94}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Attack2" ID="{A09D99AB-30F7-4763-A33F-ECA4025E6E56}">
 							<ChildrenList>
-								<Action Name="" ID="{462BAA44-8C5D-4027-8BFD-57AF8B776B55}" ShortID="672320171"/>
+								<Action Name="" ID="{462BAA44-8C5D-4027-8BFD-57AF8B776B55}" ShortID="672320171">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720_01" ID="{F31F6CD3-BA69-404E-813E-CA79C19ED3CA}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Attack3" ID="{281D6CD6-3A03-4C59-8057-753603CA124A}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{2C6CEF24-F743-4A56-9227-8B7C5A4757A6}" ShortID="627845026"/>
 							</ChildrenList>
 						</Event>
-						<Event Name="P_A_Attack4" ID="{1F2A7DBF-6032-4D87-82C1-F018E758A0AC}"/>
+						<Event Name="P_A_Attack4" ID="{1F2A7DBF-6032-4D87-82C1-F018E758A0AC}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{1BA17AF1-C84B-4B5B-A537-488ED5B4DB11}" ShortID="270762789">

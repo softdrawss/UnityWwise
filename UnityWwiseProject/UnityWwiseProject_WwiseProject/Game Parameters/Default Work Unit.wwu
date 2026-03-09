@@ -7,17 +7,17 @@
 					<ChildrenList>
 						<GameParameter Name="SFXVolume" ID="{6825868D-E305-44E0-B7B4-6A53F51CEC4F}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="MusicVolume" ID="{03DA91C6-EFC2-4A63-9E59-5E2210743DE7}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="MasterVolume" ID="{9E655669-DD13-431B-B572-47B8F707E248}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 					</ChildrenList>
