@@ -79,7 +79,7 @@ namespace Gamekit3D
 
         public void BeginAttack(bool thowingAttack)
         {
-            AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject);
+            //AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject);
             if (attackAudio != null)
                 attackAudio.PlayRandomClip();
             throwingHit = thowingAttack;

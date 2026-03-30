@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="3161908922" Type="User" GUID="{DEA5F361-0956-40FC-BC50-811D3A131C7C}" Language="SFX" Hash="{C0466C72-DC40-B565-69BC-74988FCE1B16}">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="46508091" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-footsteps-running-away-fading-2-103763.wav</ShortName>
+					<CachePath>66/{66EC2551-1672-2BA8-9849-51CA36082C28}.wem</CachePath>
+				</File>
+				<File Id="117888787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-footsteps-running-away-fading-2-103763.wav</ShortName>
+					<CachePath>37/{37BEB2DF-4EF2-3692-A666-9460C5CE8138}.wem</CachePath>
+				</File>
+				<File Id="164208645" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-small-01-230473.wav</ShortName>
+					<CachePath>EC/{ECEA9BD0-E7F0-F417-3FBF-0AF52894A845}.wem</CachePath>
+				</File>
+				<File Id="260776739" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-hmms-various-1-7175.wav</ShortName>
+					<CachePath>82/{822545D7-E399-BC74-C589-D28825BBF6A2}.wem</CachePath>
+				</File>
+				<File Id="269436358" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-footsteps-running-away-fading-2-103763.wav</ShortName>
+					<CachePath>B1/{B16AE889-B927-E83E-B7C9-4DBF1EC68CBD}.wem</CachePath>
+				</File>
+				<File Id="275119667" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-medium-230477.wav</ShortName>
+					<CachePath>1B/{1B75C43C-49C5-8D12-1A3F-D9EE66AA0A1A}.wem</CachePath>
+				</File>
+				<File Id="339234539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav</ShortName>
+					<CachePath>3C/{3CE30C01-CE38-A584-C11C-A58A18D26B1E}.wem</CachePath>
+				</File>
+				<File Id="430117726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>universfield-horror-liquid-splash-352472.wav</ShortName>
+					<CachePath>99/{99DC8760-8F7C-D558-4AF3-7D60CDB23BE4}.wem</CachePath>
+				</File>
+				<File Id="455191818" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rescopicsound-ui-alert-menu-modern-interface-deny-large-230478.wav</ShortName>
+					<CachePath>05/{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem</CachePath>
+				</File>
+				<File Id="626525727" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.wav</ShortName>
+					<CachePath>49/{49FEC7E1-384C-4F73-416B-30C588891955}.wem</CachePath>
+				</File>
+				<File Id="631457163" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-ough-47202.wav</ShortName>
+					<CachePath>E5/{E5E28132-6665-1500-7DDA-4642CCFA2C58}.wem</CachePath>
+				</File>
+				<File Id="680896729" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>dragon-studio-wet-splash-sfx-443134.wav</ShortName>
+					<CachePath>91/{9183C968-6C59-D702-9E0A-5E0B6802EFBB}.wem</CachePath>
+				</File>
+				<File Id="955883489" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>freesound_community-shimmering-object-79354.wav</ShortName>
+					<CachePath>C8/{C845BB71-54A4-B651-7F9D-18471B57AE29}.wem</CachePath>
+				</File>
+				<File Id="1020347740" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>universfield-character-falling-on-ground-250069.wav</ShortName>
+					<CachePath>95/{95FE3B97-10E4-4612-6A0D-3FE9A152008B}.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="455918897" Name="E_S_Spit" ObjectPath="\Events\Default Work Unit\Enemies\Spitter\E_S_Spit" GUID="{F928B6D5-2D05-40B8-82FB-E8419F4C257D}" DurationType="OneShot" DurationMin="1.6330322" DurationMax="1.6330322">
+					<MediaRefs>
+						<MediaRef Id="430117726"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2778368962" Name="EN_E_Splash" ObjectPath="\Events\Default Work Unit\Environment\Eeldog\EN_E_Splash" GUID="{24295435-48A0-4BD9-BAD3-ED089CD1405E}" MaxAttenuation="35" DurationType="OneShot" DurationMin="1.9819251" DurationMax="2.2898226">
+					<MediaRefs>
+						<MediaRef Id="680896729"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3163193282" Name="EN_Firefly" ObjectPath="\Events\Default Work Unit\Environment\Fireflys\EN_Firefly" GUID="{F9E12622-72AA-440C-875D-BE293C50C753}" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="955883489"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4013655675" Name="P_A_Attack1" ObjectPath="\Events\Default Work Unit\Player\P_A_Attack1" GUID="{E4C64539-615E-4566-A614-9EBFEC99B3AE}" DurationType="OneShot" DurationMin="0.52244896" DurationMax="0.52244896">
+					<MediaRefs>
+						<MediaRef Id="626525727"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4013655672" Name="P_A_Attack2" ObjectPath="\Events\Default Work Unit\Player\P_A_Attack2" GUID="{A09D99AB-30F7-4763-A33F-ECA4025E6E56}" DurationType="OneShot" DurationMin="0.42929125" DurationMax="0.42929125">
+					<MediaRefs>
+						<MediaRef Id="626525727"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="842436347" Name="P_A_Roll" ObjectPath="\Events\Default Work Unit\Player\P_A_Roll" GUID="{CAC7A874-7BD8-4C88-8ADA-1EEC45CD57E7}" DurationType="OneShot" DurationMin="1.272" DurationMax="1.272">
+					<MediaRefs>
+						<MediaRef Id="1020347740"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="615124970" Name="P_A_Thinking" ObjectPath="\Events\Default Work Unit\Player\P_A_Thinking" GUID="{183246E0-7BA7-42B5-924D-EE82604E2AAE}" DurationType="OneShot" DurationMin="1.3291342" DurationMax="1.3291342">
+					<MediaRefs>
+						<MediaRef Id="260776739"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1719569671" Name="P_Footsteps" ObjectPath="\Events\Default Work Unit\Player\P_Footsteps" GUID="{8808130C-8784-4B32-954E-B9E714F41D98}" DurationType="OneShot" DurationMin="0" DurationMax="0.5903887">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337" GUID="{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="46508091"/>
+								<MediaRef Id="117888787"/>
+								<MediaRef Id="269436358"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="331894873" Name="P_Hurt" ObjectPath="\Events\Default Work Unit\Player\P_Hurt" GUID="{57EEFE73-7381-438B-9B0C-630CE50BAFF9}" DurationType="OneShot" DurationMin="0.767829" DurationMax="0.767829">
+					<MediaRefs>
+						<MediaRef Id="631457163"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3811330420" Name="U_Back" ObjectPath="\Events\Default Work Unit\UI\U_Back" GUID="{7C65127C-E1A1-4930-BF7A-BC750EC04D1B}" DurationType="OneShot" DurationMin="0.3329225" DurationMax="0.3329225">
+					<MediaRefs>
+						<MediaRef Id="339234539"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2985878961" Name="U_Hover" ObjectPath="\Events\Default Work Unit\UI\U_Hover" GUID="{14863185-6D8D-4975-971C-FC7B4D6B67B0}" DurationType="OneShot" DurationMin="0.63354504" DurationMax="0.63354504">
+					<MediaRefs>
+						<MediaRef Id="275119667"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2154340884" Name="U_Quit" ObjectPath="\Events\Default Work Unit\UI\U_Quit" GUID="{375C718F-67E9-493B-94C9-77B404A934C7}" DurationType="OneShot" DurationMin="1.008" DurationMax="1.008">
+					<MediaRefs>
+						<MediaRef Id="455191818"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3590788049" Name="U_Select" ObjectPath="\Events\Default Work Unit\UI\U_Select" GUID="{3C3D25A8-CF7C-43AC-863C-DB8403CF8603}" DurationType="OneShot" DurationMin="0.30641273" DurationMax="0.30641273">
+					<MediaRefs>
+						<MediaRef Id="164208645"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{2F4FB138-07AB-4CF7-8507-EB4D2679ABD0}">
+					<Switches>
+						<Switch Id="2438996729" Name="HardRock" ObjectPath="\Switches\Default Work Unit\Footsteps\HardRock" GUID="{0BC296FE-A5D9-4FA3-96F9-F4CEFF83DA2B}"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Footsteps\Metal" GUID="{15D8DADA-AF0A-469F-A0E6-ABBBCB9ADBC2}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Footsteps\Grass" GUID="{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{CA815344-B65B-1D94-C754-1C4FFB33DBD1}</FileHash>
+</SoundBanksInfo>

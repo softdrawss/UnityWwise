@@ -24,14 +24,6 @@
 								<Action Name="" ID="{61BA6D9F-9412-4C0F-9D9F-06B9B8537231}" ShortID="705870951"/>
 							</ChildrenList>
 						</Event>
-						<Event Name="P_A_Run" ID="{5A660236-B43F-47C4-B894-16138300408B}">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool" Value="False"/>
-							</PropertyList>
-							<ChildrenList>
-								<Action Name="" ID="{31064929-8AD1-470B-8B2D-75DEE75641FF}" ShortID="603435093"/>
-							</ChildrenList>
-						</Event>
 						<Event Name="P_A_Jump" ID="{D16A0627-4DE9-4C7E-9E67-3A13A8F6A24F}">
 							<PropertyList>
 								<Property Name="Inclusion" Type="bool" Value="False"/>
@@ -57,11 +49,14 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Roll" ID="{CAC7A874-7BD8-4C88-8ADA-1EEC45CD57E7}">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool" Value="False"/>
-							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{EDDAD035-7D1E-4DFB-9A51-DF2E50B1DD82}" ShortID="139198286"/>
+								<Action Name="" ID="{EDDAD035-7D1E-4DFB-9A51-DF2E50B1DD82}" ShortID="139198286">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="universfield-character-falling-on-ground-250069" ID="{ED797478-80A1-46A3-A9D7-2ED45D6E1BB4}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="P_A_Attack1" ID="{E4C64539-615E-4566-A614-9EBFEC99B3AE}">
@@ -99,16 +94,31 @@
 								<Property Name="Inclusion" Type="bool" Value="False"/>
 							</PropertyList>
 						</Event>
+						<Event Name="P_Footsteps" ID="{8808130C-8784-4B32-954E-B9E714F41D98}">
+							<ChildrenList>
+								<Action Name="" ID="{D63AEF10-CE16-4244-9991-FD3856645280}" ShortID="767425826">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{F451CA98-315D-4431-A9D5-DD26DDAB92ED}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="P_Hurt" ID="{57EEFE73-7381-438B-9B0C-630CE50BAFF9}">
+							<ChildrenList>
+								<Action Name="" ID="{39F1B0CE-FF7B-4BC8-8219-E971FF75899D}" ShortID="843034314">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="freesound_community-ough-47202" ID="{5701A929-3761-4980-9CAE-63B6FF9EE48E}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemies" ID="{1BA17AF1-C84B-4B5B-A537-488ED5B4DB11}" ShortID="270762789">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ChildrenList>
 						<Folder Name="Chomper" ID="{0146C10E-85EE-4A4E-BBB3-A86F3C47A736}" ShortID="194975592">
 							<PropertyList>
@@ -142,30 +152,39 @@
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Spitter" ID="{724F531A-70B8-44BB-A5DC-49C802F87043}" ShortID="531718972">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Event Name="E_S_Idle" ID="{250429E8-9924-4E26-A22C-7807AAAAF934}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
 									<ChildrenList>
 										<Action Name="" ID="{7983A1B2-4603-4852-BE9A-08530D2C0CAC}" ShortID="500138158"/>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_S_Spit" ID="{F928B6D5-2D05-40B8-82FB-E8419F4C257D}">
 									<ChildrenList>
-										<Action Name="" ID="{7B5F9AA5-FD1F-40EB-8D0F-3E08DBFFCC6A}" ShortID="937584230"/>
+										<Action Name="" ID="{7B5F9AA5-FD1F-40EB-8D0F-3E08DBFFCC6A}" ShortID="937584230">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="universfield-horror-liquid-splash-352472" ID="{6BFF8FE9-CC11-4284-BA40-AC33552E3B43}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_S_Run" ID="{EA61B0FF-DF4D-496E-A347-9F43D58C2920}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
 									<ChildrenList>
 										<Action Name="" ID="{786A10A4-909E-43A6-8700-2404A8BE69AD}" ShortID="299396412"/>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_S_Attack" ID="{007C0CA7-A473-4F34-A964-DFE659900C12}"/>
+								<Event Name="E_S_Attack" ID="{007C0CA7-A473-4F34-A964-DFE659900C12}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Grenader" ID="{6335ACC2-2797-488B-9676-4310FD6D0D30}" ShortID="743778135">
@@ -257,6 +276,40 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{5FF12352-44CA-42EB-A79E-E4ACBB46809B}" ShortID="972711238">
+					<ChildrenList>
+						<Folder Name="Fireflys" ID="{05E88B91-773D-4434-84CC-C6185A348735}" ShortID="936989732">
+							<ChildrenList>
+								<Event Name="EN_Firefly" ID="{F9E12622-72AA-440C-875D-BE293C50C753}">
+									<ChildrenList>
+										<Action Name="" ID="{0BE80685-D2C7-4097-BAE6-AFABC950899F}" ShortID="154534675">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="freesound_community-shimmering-object-79354" ID="{D2B515CB-A627-4ECE-8317-D6F7D02EF5A4}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Eeldog" ID="{8F3488C3-E4B3-44C3-A14A-01A44A0F60AD}" ShortID="416400748">
+							<ChildrenList>
+								<Event Name="EN_E_Splash" ID="{24295435-48A0-4BD9-BAD3-ED089CD1405E}">
+									<ChildrenList>
+										<Action Name="" ID="{6EAF949B-B5A4-42DC-B40D-74BAC00311DD}" ShortID="738456013">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="dragon-studio-wet-splash-sfx-443134" ID="{149D748F-17DB-4561-A1D2-37BDEC326818}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

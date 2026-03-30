@@ -14,16 +14,16 @@
   },
   "DefaultAlign": "16",
   "Settings": {
-   "AutoSoundBankDefinition": "false",
+   "AutoSoundBankDefinition": "true",
    "CopyLooseStreamedMediaFiles": "true",
-   "SubFoldersForGeneratedFiles": "false",
+   "SubFoldersForGeneratedFiles": "true",
    "RemoveUnusedGeneratedFiles": "true",
    "SourceControlGeneratedFiles": "false",
-   "GenerateHeaderFile": "false",
+   "GenerateHeaderFile": "true",
    "GenerateContentTxtFile": "true",
-   "GenerateMetadataXML": "false",
+   "GenerateMetadataXML": "true",
    "GenerateMetadataJSON": "true",
-   "GenerateAllBanksMetadata": "false",
+   "GenerateAllBanksMetadata": "true",
    "GeneratePerBankMetadata": "true",
    "UseSoundBankNames": "true",
    "AllowExceedingMaxSize": "false",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{72F26A61-9960-67E1-4A6D-43339F7E3CF3}"
+  "FileHash": "{B455936F-FDD4-915F-DB34-7822CF9799D1}"
  }
 }

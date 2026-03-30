@@ -10,11 +10,27 @@
     "Type": "User",
     "GUID": "{DEA5F361-0956-40FC-BC50-811D3A131C7C}",
     "Language": "SFX",
-    "Hash": "{D805145B-45DC-0693-7673-4B66E236B6E1}",
+    "Hash": "{C0466C72-DC40-B565-69BC-74988FCE1B16}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "46508091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-footsteps-running-away-fading-2-103763.wav",
+      "CachePath": "66/{66EC2551-1672-2BA8-9849-51CA36082C28}.wem"
+     },
+     {
+      "Id": "117888787",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-footsteps-running-away-fading-2-103763.wav",
+      "CachePath": "37/{37BEB2DF-4EF2-3692-A666-9460C5CE8138}.wem"
+     },
      {
       "Id": "164208645",
       "Language": "SFX",
@@ -30,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "freesound_community-hmms-various-1-7175.wav",
       "CachePath": "82/{822545D7-E399-BC74-C589-D28825BBF6A2}.wem"
+     },
+     {
+      "Id": "269436358",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-footsteps-running-away-fading-2-103763.wav",
+      "CachePath": "B1/{B16AE889-B927-E83E-B7C9-4DBF1EC68CBD}.wem"
      },
      {
       "Id": "275119667",
@@ -48,6 +72,14 @@
       "CachePath": "3C/{3CE30C01-CE38-A584-C11C-A58A18D26B1E}.wem"
      },
      {
+      "Id": "430117726",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "universfield-horror-liquid-splash-352472.wav",
+      "CachePath": "99/{99DC8760-8F7C-D558-4AF3-7D60CDB23BE4}.wem"
+     },
+     {
       "Id": "455191818",
       "Language": "SFX",
       "Streaming": "false",
@@ -62,9 +94,83 @@
       "Location": "Memory",
       "ShortName": "phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.wav",
       "CachePath": "49/{49FEC7E1-384C-4F73-416B-30C588891955}.wem"
+     },
+     {
+      "Id": "631457163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-ough-47202.wav",
+      "CachePath": "E5/{E5E28132-6665-1500-7DDA-4642CCFA2C58}.wem"
+     },
+     {
+      "Id": "680896729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "dragon-studio-wet-splash-sfx-443134.wav",
+      "CachePath": "91/{9183C968-6C59-D702-9E0A-5E0B6802EFBB}.wem"
+     },
+     {
+      "Id": "955883489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-shimmering-object-79354.wav",
+      "CachePath": "C8/{C845BB71-54A4-B651-7F9D-18471B57AE29}.wem"
+     },
+     {
+      "Id": "1020347740",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "universfield-character-falling-on-ground-250069.wav",
+      "CachePath": "95/{95FE3B97-10E4-4612-6A0D-3FE9A152008B}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "455918897",
+      "Name": "E_S_Spit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemies\\Spitter\\E_S_Spit",
+      "GUID": "{F928B6D5-2D05-40B8-82FB-E8419F4C257D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6330322",
+      "DurationMax": "1.6330322",
+      "MediaRefs": [
+       {
+        "Id": "430117726"
+       }
+      ]
+     },
+     {
+      "Id": "2778368962",
+      "Name": "EN_E_Splash",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Eeldog\\EN_E_Splash",
+      "GUID": "{24295435-48A0-4BD9-BAD3-ED089CD1405E}",
+      "MaxAttenuation": "35",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9819251",
+      "DurationMax": "2.2898226",
+      "MediaRefs": [
+       {
+        "Id": "680896729"
+       }
+      ]
+     },
+     {
+      "Id": "3163193282",
+      "Name": "EN_Firefly",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Fireflys\\EN_Firefly",
+      "GUID": "{F9E12622-72AA-440C-875D-BE293C50C753}",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "955883489"
+       }
+      ]
+     },
      {
       "Id": "4013655675",
       "Name": "P_A_Attack1",
@@ -94,6 +200,20 @@
       ]
      },
      {
+      "Id": "842436347",
+      "Name": "P_A_Roll",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Roll",
+      "GUID": "{CAC7A874-7BD8-4C88-8ADA-1EEC45CD57E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.272",
+      "DurationMax": "1.272",
+      "MediaRefs": [
+       {
+        "Id": "1020347740"
+       }
+      ]
+     },
+     {
       "Id": "615124970",
       "Name": "P_A_Thinking",
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Thinking",
@@ -104,6 +224,51 @@
       "MediaRefs": [
        {
         "Id": "260776739"
+       }
+      ]
+     },
+     {
+      "Id": "1719569671",
+      "Name": "P_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_Footsteps",
+      "GUID": "{8808130C-8784-4B32-954E-B9E714F41D98}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.5903887",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2385628198",
+         "Id": "4248645337",
+         "GUID": "{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "46508091"
+         },
+         {
+          "Id": "117888787"
+         },
+         {
+          "Id": "269436358"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "331894873",
+      "Name": "P_Hurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_Hurt",
+      "GUID": "{57EEFE73-7381-438B-9B0C-630CE50BAFF9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.767829",
+      "DurationMax": "0.767829",
+      "MediaRefs": [
+       {
+        "Id": "631457163"
        }
       ]
      },
@@ -163,9 +328,37 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps",
+      "GUID": "{2F4FB138-07AB-4CF7-8507-EB4D2679ABD0}",
+      "Switches": [
+       {
+        "Id": "2438996729",
+        "Name": "HardRock",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\HardRock",
+        "GUID": "{0BC296FE-A5D9-4FA3-96F9-F4CEFF83DA2B}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Metal",
+        "GUID": "{15D8DADA-AF0A-469F-A0E6-ABBBCB9ADBC2}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Footsteps\\Grass",
+        "GUID": "{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{10EB3D79-BC9A-D71D-0FB3-74704811D3C5}"
+  "FileHash": "{09047951-0DBE-8D06-52D2-21451BCE7E0E}"
  }
 }

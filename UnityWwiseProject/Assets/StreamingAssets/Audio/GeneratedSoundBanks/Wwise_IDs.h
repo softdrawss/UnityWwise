@@ -13,6 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID E_S_SPIT = 455918897U;
+        static const AkUniqueID EN_E_SPLASH = 2778368962U;
+        static const AkUniqueID EN_FIREFLY = 3163193282U;
+        static const AkUniqueID P_A_ATTACK1 = 4013655675U;
+        static const AkUniqueID P_A_ATTACK2 = 4013655672U;
+        static const AkUniqueID P_A_ROLL = 842436347U;
+        static const AkUniqueID P_A_THINKING = 615124970U;
+        static const AkUniqueID P_FOOTSTEPS = 1719569671U;
+        static const AkUniqueID P_HURT = 331894873U;
         static const AkUniqueID U_BACK = 3811330420U;
         static const AkUniqueID U_HOVER = 2985878961U;
         static const AkUniqueID U_QUIT = 2154340884U;

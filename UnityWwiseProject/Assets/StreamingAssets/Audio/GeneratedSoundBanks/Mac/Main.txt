@@ -1,17 +1,39 @@
 Event	ID	Name			Wwise Object Path	Notes
+	331894873	P_Hurt			\Default Work Unit\Player\P_Hurt	
+	455918897	E_S_Spit			\Default Work Unit\Enemies\Spitter\E_S_Spit	
 	615124970	P_A_Thinking			\Default Work Unit\Player\P_A_Thinking	
+	842436347	P_A_Roll			\Default Work Unit\Player\P_A_Roll	
+	1719569671	P_Footsteps			\Default Work Unit\Player\P_Footsteps	
 	2154340884	U_Quit			\Default Work Unit\UI\U_Quit	
+	2778368962	EN_E_Splash			\Default Work Unit\Environment\Eeldog\EN_E_Splash	
 	2985878961	U_Hover			\Default Work Unit\UI\U_Hover	
+	3163193282	EN_Firefly			\Default Work Unit\Environment\Fireflys\EN_Firefly	
 	3590788049	U_Select			\Default Work Unit\UI\U_Select	
 	3811330420	U_Back			\Default Work Unit\UI\U_Back	
 	4013655672	P_A_Attack2			\Default Work Unit\Player\P_A_Attack2	
 	4013655675	P_A_Attack1			\Default Work Unit\Player\P_A_Attack1	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	2438996729	HardRock	Footsteps			
+	2473969246	Metal	Footsteps			
+	4248645337	Grass	Footsteps			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	46508091	freesound_community-footsteps-running-away-fading-2-103763	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\66\{66EC2551-1672-2BA8-9849-51CA36082C28}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Grass\freesound_community-footsteps-running-away-fading-2-103763		47162
+	117888787	freesound_community-footsteps-running-away-fading-2-103763_02	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\37\{37BEB2DF-4EF2-3692-A666-9460C5CE8138}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Grass\freesound_community-footsteps-running-away-fading-2-103763_02		35096
 	164208645	Select	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\EC\{ECEA9BD0-E7F0-F417-3FBF-0AF52894A845}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Select		64252
 	260776739	freesound_community-hmms-various-1-7175	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\82\{822545D7-E399-BC74-C589-D28825BBF6A2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Animations\freesound_community-hmms-various-1-7175		117326
+	269436358	freesound_community-footsteps-running-away-fading-2-103763_01	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\B1\{B16AE889-B927-E83E-B7C9-4DBF1EC68CBD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Grass\freesound_community-footsteps-running-away-fading-2-103763_01		42134
 	275119667	Hover	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\1B\{1B75C43C-49C5-8D12-1A3F-D9EE66AA0A1A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Hover		121736
 	339234539	Back	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\3C\{3CE30C01-CE38-A584-C11C-A58A18D26B1E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Back		69804
+	430117726	universfield-horror-liquid-splash-352472	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\99\{99DC8760-8F7C-D558-4AF3-7D60CDB23BE4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemies\Spitter\Spit\universfield-horror-liquid-splash-352472		313640
 	455191818	Quit	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\05\{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Quit		193632
 	626525727	phatphrogstudio-rpg-female-attack-grunt-no-ai-481720	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\49\{49FEC7E1-384C-4F73-416B-30C588891955}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Animations\phatphrogstudio-rpg-female-attack-grunt-no-ai-481720		92256
+	631457163	freesound_community-ough-47202	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\E5\{E5E28132-6665-1500-7DDA-4642CCFA2C58}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Animations\freesound_community-ough-47202		73808
+	680896729	dragon-studio-wet-splash-sfx-443134	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\91\{9183C968-6C59-D702-9E0A-5E0B6802EFBB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Eeldog\dragon-studio-wet-splash-sfx-443134		391776
+	955883489	freesound_community-shimmering-object-79354	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\C8\{C845BB71-54A4-B651-7F9D-18471B57AE29}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Fireflies\freesound_community-shimmering-object-79354		4092000
+	1020347740	universfield-character-falling-on-ground-250069	C:\Users\julia\OneDrive\Documents\GitHub\UnityWwise\UnityWwiseProject\UnityWwiseProject_WwiseProject\.cache\95\{95FE3B97-10E4-4612-6A0D-3FE9A152008B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Animations\universfield-character-falling-on-ground-250069		244320
 

@@ -10,7 +10,39 @@
 						<Folder Name="Spitter" ID="{87494D1E-D144-4C34-95E0-8BB46D4B8775}" ShortID="434317578">
 							<ChildrenList>
 								<Folder Name="Animations" ID="{9D0A16D3-6EAD-4487-A7B9-52C0612DEEC5}" ShortID="769567807"/>
-								<Folder Name="Spit" ID="{BE9DA412-79F3-466E-BB6A-BD83177DE6B9}" ShortID="204123802"/>
+								<Folder Name="Spit" ID="{BE9DA412-79F3-466E-BB6A-BD83177DE6B9}" ShortID="204123802">
+									<ChildrenList>
+										<Sound Name="universfield-horror-liquid-splash-352472" ID="{6BFF8FE9-CC11-4284-BA40-AC33552E3B43}" ShortID="963170167">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="universfield-horror-liquid-splash-352472" ID="{30B0F725-7FD0-490A-8EE0-4FAD8A7B3886}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0469677404690814"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>universfield-horror-liquid-splash-352472.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="430117726"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="universfield-horror-liquid-splash-352472" ID="{30B0F725-7FD0-490A-8EE0-4FAD8A7B3886}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -20,6 +52,22 @@
 						<Folder Name="Footsteps" ID="{CC21B409-224F-46B8-A28E-0D773A9FC9A7}" ShortID="188822838">
 							<ChildrenList>
 								<SwitchContainer Name="Footsteps" ID="{F451CA98-315D-4431-A9D5-DD26DDAB92ED}" ShortID="398143949">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CA8BBF9E-490B-452B-AF6E-2EFE1569FB7D}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
@@ -28,7 +76,7 @@
 											<ObjectRef Name="Grass" ID="{F7ACA457-5C39-4EE3-9E8B-6E17F5C25148}" WorkUnitID="{9F0960E9-9726-4CE1-BB94-00A0E35C2FF1}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+											<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Footsteps" ID="{2F4FB138-07AB-4CF7-8507-EB4D2679ABD0}" WorkUnitID="{9F0960E9-9726-4CE1-BB94-00A0E35C2FF1}"/>
@@ -46,6 +94,21 @@
 											</ReferenceList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Grass" ID="{ED41A408-5735-44DA-88DD-C7DDEA8FEFD8}" ShortID="796840207">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{16856CBB-A1FF-4C12-8DEA-6596AA274E88}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-175"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
@@ -54,6 +117,116 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{AE67F55B-D8B9-4CB0-B566-B388A93B3ADE}" ShortID="713363575">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E577FA77-52B2-4F57-9647-D366837B2683}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{30029A2A-876B-4CDA-AC34-44F1450BEDBE}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0408239192740862"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.574450924989449"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>freesound_community-footsteps-running-away-fading-2-103763.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="46508091"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{30029A2A-876B-4CDA-AC34-44F1450BEDBE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="freesound_community-footsteps-running-away-fading-2-103763_01" ID="{9CF73F94-1116-4BCA-BD52-6AF232B6179A}" ShortID="95575400">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C4046661-487B-4697-8EBF-4D83DFF9E6F3}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{8D02EBEA-985B-4458-A321-F1A18BFCCBED}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.576571587150243"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.05320416011282"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>freesound_community-footsteps-running-away-fading-2-103763.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="269436358"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{8D02EBEA-985B-4458-A321-F1A18BFCCBED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="freesound_community-footsteps-running-away-fading-2-103763_02" ID="{2825CD30-FD99-4480-91AD-41F266C39DC2}" ShortID="980079338">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{9697BC3C-93A3-451E-8AFC-4BDF78E5430E}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{7BCC1000-BD84-4BBA-BD4A-10DA4650BEB1}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.330355637658222"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.727196004766907"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>freesound_community-footsteps-running-away-fading-2-103763.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="117888787"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="freesound_community-footsteps-running-away-fading-2-103763" ID="{7BCC1000-BD84-4BBA-BD4A-10DA4650BEB1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Hard Rock" ID="{A6CDBBF3-E3FF-44FF-9A48-E77C9C8D8FDB}" ShortID="466482602">
 											<ReferenceList>
@@ -110,7 +283,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+											<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -137,7 +310,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+											<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -166,7 +339,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+											<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -182,15 +355,321 @@
 										<ActiveSource Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{42A40A36-F86F-4DA2-A3C0-C6880834E702}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="universfield-character-falling-on-ground-250069" ID="{ED797478-80A1-46A3-A9D7-2ED45D6E1BB4}" ShortID="193945746">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="universfield-character-falling-on-ground-250069" ID="{8963B1CF-D623-440D-8BBC-E9A39FEA3F26}">
+											<Language>SFX</Language>
+											<AudioFile>universfield-character-falling-on-ground-250069.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1020347740"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="universfield-character-falling-on-ground-250069" ID="{8963B1CF-D623-440D-8BBC-E9A39FEA3F26}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="freesound_community-ough-47202" ID="{5701A929-3761-4980-9CAE-63B6FF9EE48E}" ShortID="321953713">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="freesound_community-ough-47202" ID="{9468E27D-07B4-4697-BA4B-23B966A31886}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.36017099115515"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.36017099115515"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>freesound_community-ough-47202.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="631457163"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="freesound_community-ough-47202" ID="{9468E27D-07B4-4697-BA4B-23B966A31886}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{CA906517-0E6C-47A4-B139-5ADF24708B62}" ShortID="510952453">
 					<ChildrenList>
-						<Folder Name="Fireflies" ID="{3DFD2B42-4E3A-4FDE-8E0A-850D52F61B52}" ShortID="268904082"/>
+						<Folder Name="Fireflies" ID="{3DFD2B42-4E3A-4FDE-8E0A-850D52F61B52}" ShortID="268904082">
+							<ChildrenList>
+								<Sound Name="freesound_community-shimmering-object-79354" ID="{D2B515CB-A627-4ECE-8317-D6F7D02EF5A4}" ShortID="327699769">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{6824312D-96FF-4B2A-9F7D-58F3E00223C7}" ShortID="307062358">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="10"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{848E063C-A085-4739-BF37-C817795B05B6}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="freesound_community-shimmering-object-79354" ID="{FD6C533E-130D-4CB6-8885-E398D6B63810}">
+											<Language>SFX</Language>
+											<AudioFile>freesound_community-shimmering-object-79354.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="955883489"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="freesound_community-shimmering-object-79354" ID="{FD6C533E-130D-4CB6-8885-E398D6B63810}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 						<Folder Name="Platforms" ID="{D089B344-E9E9-4A1D-A62E-4430077EB397}" ShortID="236072135"/>
-						<Folder Name="New Virtual Folder" ID="{75F3CBED-45FE-4787-BC79-7057F320CB0B}" ShortID="848249527"/>
+						<Folder Name="Eeldog" ID="{75F3CBED-45FE-4787-BC79-7057F320CB0B}" ShortID="848249527">
+							<ChildrenList>
+								<Sound Name="dragon-studio-wet-splash-sfx-443134" ID="{149D748F-17DB-4561-A1D2-37BDEC326818}" ShortID="4067751">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-150</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5FFA2BFB-30F7-44BF-B023-33B57BA78CE8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-35</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{A3D48AF6-355C-4C99-AEEA-F1126EDF6B6C}" ShortID="403972724">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="35"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{13F617B4-1A1E-4EB1-8327-5BFC5FAB631D}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>35</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3E3B05B5-631A-4782-A60B-E89B620E99B5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{E3D4D22A-5FCB-4527-AFDC-14E9435E5269}" WorkUnitID="{1888E646-D80D-4A8B-BC76-77BCA6DA72CD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="splash" ID="{65C85728-294C-4690-A3F6-7DEDCF42A35B}">
+											<Language>SFX</Language>
+											<AudioFile>dragon-studio-wet-splash-sfx-443134.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680896729"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{735CCAD3-11A8-4FF3-9150-0A10EF08A188}"/>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="splash" ID="{65C85728-294C-4690-A3F6-7DEDCF42A35B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{51EC771E-F430-45A6-B933-A2EF9762A8B8}" ShortID="671064856">

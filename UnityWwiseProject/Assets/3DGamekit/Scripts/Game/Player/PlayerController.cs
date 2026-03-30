@@ -24,8 +24,8 @@ namespace Gamekit3D
 
         public CameraSettings cameraSettings;            // Reference used to determine the camera's direction.
         public MeleeWeapon meleeWeapon;                  // Reference used to (de)activate the staff when attacking. 
-        public RandomAudioPlayer footstepPlayer;         // Random Audio Players used for various situations.
-        public RandomAudioPlayer hurtAudioPlayer;
+        public AkGameObj footstepPlayer;         // Random Audio Players used for various situations.
+        public AkGameObj hurtAudioPlayer;
         public RandomAudioPlayer landingPlayer;
         public RandomAudioPlayer emoteLandingPlayer;
         public RandomAudioPlayer emoteDeathPlayer;
@@ -58,6 +58,8 @@ namespace Gamekit3D
         protected Checkpoint m_CurrentCheckpoint;      // Reference used to reset Ellen to the correct position on respawn.
         protected bool m_Respawning;                   // Whether Ellen is currently respawning.
         protected float m_IdleTimer;                   // Used to count up to Ellen considering a random idle.
+
+        bool m_HasPlayedFootstep;
 
         // These constants are used to ensure Ellen moves and behaves properly.
         // It is advised you don't change them without fully understanding what they do in code.
@@ -117,11 +119,11 @@ namespace Gamekit3D
 
             Transform footStepSource = transform.Find("FootstepSource");
             if (footStepSource != null)
-                footstepPlayer = footStepSource.GetComponent<RandomAudioPlayer>();
+                footstepPlayer = footStepSource.GetComponent<AkGameObj>();
 
             Transform hurtSource = transform.Find("HurtSource");
             if (hurtSource != null)
-                hurtAudioPlayer = hurtSource.GetComponent<RandomAudioPlayer>();
+                hurtAudioPlayer = hurtSource.GetComponent<AkGameObj>();
 
             Transform landingSource = transform.Find("LandingSource");
             if (landingSource != null)
@@ -421,21 +423,23 @@ namespace Gamekit3D
         {
             float footfallCurve = m_Animator.GetFloat(m_HashFootFall);
 
-            if (footfallCurve > 0.01f && !footstepPlayer.playing && footstepPlayer.canPlay)
+            if (footfallCurve > 0.1f && !m_HasPlayedFootstep && m_ForwardSpeed > 0.1f && m_IsGrounded)
             {
-                footstepPlayer.playing = true;
-                footstepPlayer.canPlay = false;
-                footstepPlayer.PlayRandomClip(m_CurrentWalkingSurface, m_ForwardSpeed < 4 ? 0 : 1);
+                AkUnitySoundEngine.PostEvent("P_Footsteps", footstepPlayer.gameObject);
+                m_HasPlayedFootstep = true;
             }
-            else if (footstepPlayer.playing)
+            else if (footfallCurve < 0.1f)
             {
-                footstepPlayer.playing = false;
+                m_HasPlayedFootstep = false;
             }
-            else if (footfallCurve < 0.01f && !footstepPlayer.canPlay)
+            if (m_ForwardSpeed < 0.1f)
             {
-                footstepPlayer.canPlay = true;
+                AkUnitySoundEngine.ExecuteActionOnEvent(
+                    "P_Footsteps",
+                    AkActionOnEventType.AkActionOnEventType_Stop,
+                    footstepPlayer.gameObject
+                );
             }
-
             if (m_IsGrounded && !m_PreviouslyGrounded)
             {
                 landingPlayer.PlayRandomClip(m_CurrentWalkingSurface, bankId: m_ForwardSpeed < 4 ? 0 : 1);
@@ -449,7 +453,9 @@ namespace Gamekit3D
 
             if (m_CurrentStateInfo.shortNameHash == m_HashHurt && m_PreviousCurrentStateInfo.shortNameHash != m_HashHurt)
             {
-                hurtAudioPlayer.PlayRandomClip();
+                // HURT
+                AkUnitySoundEngine.PostEvent("P_Hurt", hurtAudioPlayer.gameObject);
+                //hurtAudioPlayer.PlayRandomClip();
             }
 
             if (m_CurrentStateInfo.shortNameHash == m_HashEllenDeath && m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenDeath)
@@ -463,6 +469,7 @@ namespace Gamekit3D
                 m_CurrentStateInfo.shortNameHash == m_HashEllenCombo4 && m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo4)
             {
                 emoteAttackPlayer.PlayRandomClip();
+                AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject);
             }
         }
 
@@ -603,7 +610,8 @@ namespace Gamekit3D
             
             // Set the Respawn parameter of the animator.
             m_Animator.SetTrigger(m_HashRespawn);
-            
+            AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject); // Júlia: Should put Respawn event here
+
             // Start the respawn graphic effects.
             spawn.StartEffect();
             
@@ -665,7 +673,7 @@ namespace Gamekit3D
             // Play an audio clip of being hurt.
             if (hurtAudioPlayer != null)
             {
-                hurtAudioPlayer.PlayRandomClip();
+                AkUnitySoundEngine.PostEvent("P_Hurt", hurtAudioPlayer.gameObject); ; // 
             }
         }
 
