@@ -11,13 +11,16 @@
 						<ObjectRef Name="U_Select" ID="{3C3D25A8-CF7C-43AC-863C-DB8403CF8603}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EN_Firefly" ID="{F9E12622-72AA-440C-875D-BE293C50C753}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="P_A_Attack1" ID="{E4C64539-615E-4566-A614-9EBFEC99B3AE}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EN_Birds" ID="{427E2121-3932-4619-9AA8-CF4A8BC1AACC}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="P_A_Attack2" ID="{A09D99AB-30F7-4763-A33F-ECA4025E6E56}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="U_Back" ID="{7C65127C-E1A1-4930-BF7A-BC750EC04D1B}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="U_Quit" ID="{375C718F-67E9-493B-94C9-77B404A934C7}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="U_Hover" ID="{14863185-6D8D-4975-971C-FC7B4D6B67B0}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="E_C_Grunt" ID="{BDB6F80F-FF68-49B9-8017-794233FFEA6B}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="P_Footsteps" ID="{8808130C-8784-4B32-954E-B9E714F41D98}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EN_E_Splash" ID="{24295435-48A0-4BD9-BAD3-ED089CD1405E}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="P_A_Roll" ID="{CAC7A874-7BD8-4C88-8ADA-1EEC45CD57E7}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EN_River" ID="{EE9CB563-D70D-4FB6-BE4A-97249F51DA4A}" WorkUnitID="{30095AB1-3413-4DD4-874B-86D503191CAD}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

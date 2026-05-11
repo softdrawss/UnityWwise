@@ -29,7 +29,7 @@ namespace Gamekit3D
         public RandomAudioPlayer landingPlayer;
         public RandomAudioPlayer emoteLandingPlayer;
         public RandomAudioPlayer emoteDeathPlayer;
-        public RandomAudioPlayer emoteAttackPlayer;
+        public AkGameObj emoteAttackPlayer;
         public RandomAudioPlayer emoteJumpPlayer;
 
         protected AnimatorStateInfo m_CurrentStateInfo;    // Information about the base layer of the animator cached.
@@ -453,7 +453,6 @@ namespace Gamekit3D
 
             if (m_CurrentStateInfo.shortNameHash == m_HashHurt && m_PreviousCurrentStateInfo.shortNameHash != m_HashHurt)
             {
-                // HURT
                 AkUnitySoundEngine.PostEvent("P_Hurt", hurtAudioPlayer.gameObject);
                 //hurtAudioPlayer.PlayRandomClip();
             }
@@ -468,8 +467,8 @@ namespace Gamekit3D
                 m_CurrentStateInfo.shortNameHash == m_HashEllenCombo3 && m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo3 ||
                 m_CurrentStateInfo.shortNameHash == m_HashEllenCombo4 && m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo4)
             {
-                emoteAttackPlayer.PlayRandomClip();
-                AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject);
+                //emoteAttackPlayer.PlayRandomClip();
+                AkUnitySoundEngine.PostEvent("P_Hurt", emoteAttackPlayer.gameObject);
             }
         }
 
@@ -610,7 +609,7 @@ namespace Gamekit3D
             
             // Set the Respawn parameter of the animator.
             m_Animator.SetTrigger(m_HashRespawn);
-            AkUnitySoundEngine.PostEvent("P_A_Attack1", gameObject); // Júlia: Should put Respawn event here
+            AkUnitySoundEngine.PostEvent("P_Hurt", gameObject); // Júlia: Should put Respawn event here
 
             // Start the respawn graphic effects.
             spawn.StartEffect();

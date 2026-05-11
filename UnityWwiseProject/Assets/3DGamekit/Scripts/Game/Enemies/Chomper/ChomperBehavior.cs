@@ -38,7 +38,7 @@ namespace Gamekit3D
         public RandomAudioPlayer frontStepAudio;
         public RandomAudioPlayer backStepAudio;
         public RandomAudioPlayer hitAudio;
-        public RandomAudioPlayer gruntAudio;
+        public AkGameObj gruntAudio;
         public RandomAudioPlayer deathAudio;
         public RandomAudioPlayer spottedAudio;
 
@@ -79,7 +79,8 @@ namespace Gamekit3D
         public void Grunt ()
         {
             if (gruntAudio != null)
-                gruntAudio.PlayRandomClip ();
+                //gruntAudio.PlayRandomClip ();
+                AkUnitySoundEngine.PostEvent("E_C_Grunt", gruntAudio.gameObject);
         }
 
         public void Spotted()

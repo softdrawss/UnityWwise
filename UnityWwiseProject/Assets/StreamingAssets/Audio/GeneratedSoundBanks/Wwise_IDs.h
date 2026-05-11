@@ -13,9 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID E_C_GRUNT = 404354403U;
         static const AkUniqueID E_S_SPIT = 455918897U;
+        static const AkUniqueID EN_BIRDS = 2194260537U;
         static const AkUniqueID EN_E_SPLASH = 2778368962U;
         static const AkUniqueID EN_FIREFLY = 3163193282U;
+        static const AkUniqueID EN_RIVER = 3000683619U;
         static const AkUniqueID P_A_ATTACK1 = 4013655675U;
         static const AkUniqueID P_A_ATTACK2 = 4013655672U;
         static const AkUniqueID P_A_ROLL = 842436347U;

@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{DEA5F361-0956-40FC-BC50-811D3A131C7C}",
     "Language": "SFX",
-    "Hash": "{C0466C72-DC40-B565-69BC-74988FCE1B16}",
+    "Hash": "{5CE8CA50-9BCE-AA0B-9F4A-682D1AF99AD2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "23425293",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "92/{92DF4FDA-D525-C2FF-CD4B-39D22CD15CC2}.wem"
+     },
      {
       "Id": "46508091",
       "Language": "SFX",
@@ -24,12 +32,28 @@
       "CachePath": "66/{66EC2551-1672-2BA8-9849-51CA36082C28}.wem"
      },
      {
-      "Id": "117888787",
+      "Id": "67758245",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "freesound_community-footsteps-running-away-fading-2-103763.wav",
-      "CachePath": "37/{37BEB2DF-4EF2-3692-A666-9460C5CE8138}.wem"
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "CE/{CE67CA13-DEF3-1864-CCBC-213DC5BCDE2A}.wem"
+     },
+     {
+      "Id": "100948076",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-heavy-grunt-6969.wav",
+      "CachePath": "00/{008A6825-B0FF-D41B-0C7C-20F244F34BDF}.wem"
+     },
+     {
+      "Id": "162662137",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "A5/{A5FC8A83-CCD3-02F2-1860-58EC342FAF0A}.wem"
      },
      {
       "Id": "164208645",
@@ -64,12 +88,28 @@
       "CachePath": "1B/{1B75C43C-49C5-8D12-1A3F-D9EE66AA0A1A}.wem"
      },
      {
+      "Id": "285189710",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "B6/{B6F96F1D-BA2E-2503-2627-ADBB6EE31E4A}.wem"
+     },
+     {
       "Id": "339234539",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "rescopicsound-ui-click-menu-modern-interface-select-large-230474.wav",
       "CachePath": "3C/{3CE30C01-CE38-A584-C11C-A58A18D26B1E}.wem"
+     },
+     {
+      "Id": "375528531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "D9/{D956AF11-9E97-ECCE-6853-2D0EB3F58769}.wem"
      },
      {
       "Id": "430117726",
@@ -88,6 +128,38 @@
       "CachePath": "05/{05E79C33-45CC-F79A-9362-132319DA9C1F}.wem"
      },
      {
+      "Id": "473129634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "5F/{5F8DE814-5460-0AF7-68D0-A984AB7C06FA}.wem"
+     },
+     {
+      "Id": "490580853",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-shimmering-object-79354.wav",
+      "CachePath": "F8/{F82046F9-64FA-9E12-6DFD-EB290EF6526C}.wem"
+     },
+     {
+      "Id": "558848234",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "57/{574D2C8A-192F-FE80-7945-4314CCB53438}.wem"
+     },
+     {
+      "Id": "581602799",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "5B/{5BAEA3E1-63EB-9EC4-0C61-5C6C7527645A}.wem"
+     },
+     {
       "Id": "626525727",
       "Language": "SFX",
       "Streaming": "false",
@@ -101,7 +173,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "freesound_community-ough-47202.wav",
-      "CachePath": "E5/{E5E28132-6665-1500-7DDA-4642CCFA2C58}.wem"
+      "CachePath": "44/{4496255E-2F5B-D7E6-B751-4584E701C6B9}.wem"
+     },
+     {
+      "Id": "674629492",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "yuliana-yurukova-bird-333090.wav",
+      "CachePath": "E8/{E8794237-220E-5D04-4285-42BBC0E5A268}.wem"
      },
      {
       "Id": "680896729",
@@ -112,12 +192,44 @@
       "CachePath": "91/{9183C968-6C59-D702-9E0A-5E0B6802EFBB}.wem"
      },
      {
-      "Id": "955883489",
+      "Id": "785795913",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "freesound_community-shimmering-object-79354.wav",
-      "CachePath": "C8/{C845BB71-54A4-B651-7F9D-18471B57AE29}.wem"
+      "ShortName": "alex_jauk-calm-zen-river-flowing-228223.wav",
+      "CachePath": "CE/{CE529AA8-2922-439A-A534-6E3AB4ED431B}.wem"
+     },
+     {
+      "Id": "816034301",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "yuliana-yurukova-bird-333090.wav",
+      "CachePath": "EF/{EF91CF4E-C01C-65F5-9D5F-1E052AD96722}.wem"
+     },
+     {
+      "Id": "833874932",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "yuliana-yurukova-bird-333090.wav",
+      "CachePath": "E8/{E87B9916-F548-7FE8-C743-5391255C0D32}.wem"
+     },
+     {
+      "Id": "912626546",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "yuliana-yurukova-bird-333090.wav",
+      "CachePath": "90/{906AA73D-7D2F-8B18-F5D2-B9FE20389A63}.wem"
+     },
+     {
+      "Id": "952526184",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-dog-growl-61002.wav",
+      "CachePath": "B0/{B02B0808-993E-2EB3-AC06-8D6813B35DED}.wem"
      },
      {
       "Id": "1020347740",
@@ -126,9 +238,83 @@
       "Location": "Memory",
       "ShortName": "universfield-character-falling-on-ground-250069.wav",
       "CachePath": "95/{95FE3B97-10E4-4612-6A0D-3FE9A152008B}.wem"
+     },
+     {
+      "Id": "1064006471",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "freesound_community-shimmering-object-79354.wav",
+      "CachePath": "70/{706070AE-FB63-01C0-B626-DCB64908306E}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "48620415",
+       "Name": "Have_U_Ever_Been_Outside",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Exteriors\\Have_U_Ever_Been_Outside",
+       "GUID": "{FE29AE8D-FD86-4652-A95D-68D32F5760EC}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1431265797",
+       "Name": "Monsterize",
+       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Transpose\\Monsterize",
+       "GUID": "{99F80B38-1C45-42CE-9BCD-E94F3885DCAA}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "404354403",
+      "Name": "E_C_Grunt",
+      "ObjectPath": "\\Events\\Default Work Unit\\Enemies\\Chomper\\E_C_Grunt",
+      "GUID": "{BDB6F80F-FF68-49B9-8017-794233FFEA6B}",
+      "MaxAttenuation": "25",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9192814",
+      "DurationMax": "7.634092",
+      "MediaRefs": [
+       {
+        "Id": "23425293"
+       },
+       {
+        "Id": "67758245"
+       },
+       {
+        "Id": "162662137"
+       },
+       {
+        "Id": "285189710"
+       },
+       {
+        "Id": "375528531"
+       },
+       {
+        "Id": "473129634"
+       },
+       {
+        "Id": "558848234"
+       },
+       {
+        "Id": "581602799"
+       },
+       {
+        "Id": "952526184"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1431265797"
+        }
+       ]
+      }
+     },
      {
       "Id": "455918897",
       "Name": "E_S_Spit",
@@ -142,6 +328,35 @@
         "Id": "430117726"
        }
       ]
+     },
+     {
+      "Id": "2194260537",
+      "Name": "EN_Birds",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\Birds\\EN_Birds",
+      "GUID": "{427E2121-3932-4619-9AA8-CF4A8BC1AACC}",
+      "MaxAttenuation": "150",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "674629492"
+       },
+       {
+        "Id": "816034301"
+       },
+       {
+        "Id": "833874932"
+       },
+       {
+        "Id": "912626546"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "48620415"
+        }
+       ]
+      }
      },
      {
       "Id": "2778368962",
@@ -167,7 +382,23 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "955883489"
+        "Id": "490580853"
+       },
+       {
+        "Id": "1064006471"
+       }
+      ]
+     },
+     {
+      "Id": "3000683619",
+      "Name": "EN_River",
+      "ObjectPath": "\\Events\\Default Work Unit\\Environment\\River\\EN_River",
+      "GUID": "{EE9CB563-D70D-4FB6-BE4A-97249F51DA4A}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "785795913"
        }
       ]
      },
@@ -177,11 +408,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_A_Attack1",
       "GUID": "{E4C64539-615E-4566-A614-9EBFEC99B3AE}",
       "DurationType": "OneShot",
-      "DurationMin": "0.52244896",
-      "DurationMax": "0.52244896",
+      "DurationMin": "0.3746709",
+      "DurationMax": "0.40858155",
       "MediaRefs": [
        {
-        "Id": "626525727"
+        "Id": "631457163"
        }
       ]
      },
@@ -232,9 +463,10 @@
       "Name": "P_Footsteps",
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_Footsteps",
       "GUID": "{8808130C-8784-4B32-954E-B9E714F41D98}",
+      "MaxAttenuation": "20",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "0.5903887",
+      "DurationMax": "0.77677596",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -249,9 +481,6 @@
           "Id": "46508091"
          },
          {
-          "Id": "117888787"
-         },
-         {
           "Id": "269436358"
          }
         ]
@@ -264,11 +493,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\P_Hurt",
       "GUID": "{57EEFE73-7381-438B-9B0C-630CE50BAFF9}",
       "DurationType": "OneShot",
-      "DurationMin": "0.767829",
-      "DurationMax": "0.767829",
+      "DurationMin": "0.4131585",
+      "DurationMax": "0.46375474",
       "MediaRefs": [
        {
-        "Id": "631457163"
+        "Id": "100948076"
        }
       ]
      },
@@ -292,8 +521,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\U_Hover",
       "GUID": "{14863185-6D8D-4975-971C-FC7B4D6B67B0}",
       "DurationType": "OneShot",
-      "DurationMin": "0.63354504",
-      "DurationMax": "0.63354504",
+      "DurationMin": "0.5979868",
+      "DurationMax": "0.6712176",
       "MediaRefs": [
        {
         "Id": "275119667"
@@ -359,6 +588,6 @@
     ]
    }
   ],
-  "FileHash": "{09047951-0DBE-8D06-52D2-21451BCE7E0E}"
+  "FileHash": "{30B44C0B-065E-B45E-C9DA-A8D92ECEF638}"
  }
 }

@@ -64,7 +64,7 @@
 								<Action Name="" ID="{A392193F-29B3-45A4-92F0-36705A5882AA}" ShortID="494047109">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="phatphrogstudio-rpg-female-attack-grunt-no-ai-481720" ID="{5B632CDF-6060-4113-BD4B-07048C2E3A94}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+											<ObjectRef Name="freesound_community-ough-47202" ID="{5701A929-3761-4980-9CAE-63B6FF9EE48E}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -110,7 +110,7 @@
 								<Action Name="" ID="{39F1B0CE-FF7B-4BC8-8219-E971FF75899D}" ShortID="843034314">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="freesound_community-ough-47202" ID="{5701A929-3761-4980-9CAE-63B6FF9EE48E}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+											<ObjectRef Name="freesound_community-heavy-grunt-6969" ID="{0945F35D-6B07-4BA9-B230-E43D9E77224E}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -121,32 +121,62 @@
 				<Folder Name="Enemies" ID="{1BA17AF1-C84B-4B5B-A537-488ED5B4DB11}" ShortID="270762789">
 					<ChildrenList>
 						<Folder Name="Chomper" ID="{0146C10E-85EE-4A4E-BBB3-A86F3C47A736}" ShortID="194975592">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Event Name="E_C_Idle" ID="{3B932D9A-9D6B-499D-B365-086F954A8257}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
 									<ChildrenList>
 										<Action Name="" ID="{A73F40AC-A7FD-45D1-9B97-47A064D9D8FB}" ShortID="390222511"/>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_C_Run" ID="{8CC04EF8-4F6D-446A-98B1-8A04A7FE3E97}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
 									<ChildrenList>
 										<Action Name="" ID="{3174B7B4-2534-4AC3-93D4-A16C22952C1B}" ShortID="677729173"/>
 									</ChildrenList>
 								</Event>
 								<Event Name="E_C_Die" ID="{4E503E17-0799-42B1-B361-42FE3E6EB23A}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
 									<ChildrenList>
 										<Action Name="" ID="{E5BA973A-4D1D-4594-8449-B9F9D64DF37D}" ShortID="573374159"/>
 									</ChildrenList>
 								</Event>
-								<Event Name="E_C_Attack" ID="{BDB6F80F-FF68-49B9-8017-794233FFEA6B}">
+								<Event Name="E_C_Grunt" ID="{BDB6F80F-FF68-49B9-8017-794233FFEA6B}">
 									<ChildrenList>
-										<Action Name="" ID="{AE007E65-A834-4917-8239-0C469F97F46F}" ShortID="275665744"/>
+										<Action Name="" ID="{AE007E65-A834-4917-8239-0C469F97F46F}" ShortID="275665744">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Growls" ID="{650EFD21-3478-4715-9B5E-8B4FD0385705}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_C_Footsteps" ID="{9952E758-812F-41C6-9D53-774FD7B598B2}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{12D1CDFD-5AFC-4E4F-A35F-E6B146338B5B}" ShortID="77574015">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Footsteps" ID="{B52FE3CE-1728-4FA4-B027-D983005D81B9}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="E_C_Attack" ID="{42941FDB-F7CA-4F11-A996-68F29320ACD5}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{E44005C9-0C84-43B8-8184-4DDDA3FF0E9A}" ShortID="572569668"/>
 									</ChildrenList>
 								</Event>
 							</ChildrenList>
@@ -287,7 +317,7 @@
 										<Action Name="" ID="{0BE80685-D2C7-4097-BAE6-AFABC950899F}" ShortID="154534675">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="freesound_community-shimmering-object-79354" ID="{D2B515CB-A627-4ECE-8317-D6F7D02EF5A4}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+													<ObjectRef Name="Fireflies" ID="{AEFD2DB8-1B88-418A-9BB4-64114DCDE0B0}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -303,6 +333,36 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="dragon-studio-wet-splash-sfx-443134" ID="{149D748F-17DB-4561-A1D2-37BDEC326818}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Birds" ID="{08F8971F-A13E-4A70-836E-3924DCCCC743}" ShortID="546446280">
+							<ChildrenList>
+								<Event Name="EN_Birds" ID="{427E2121-3932-4619-9AA8-CF4A8BC1AACC}">
+									<ChildrenList>
+										<Action Name="" ID="{05C8E21D-165B-44DD-BE65-DA2A48EA4CF7}" ShortID="529803589">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Birds" ID="{846B4AF6-EEDD-4B1F-BDC1-3D2012C1902A}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="River" ID="{D081C6DE-83BD-4274-BA81-337B059C6270}" ShortID="644062807">
+							<ChildrenList>
+								<Event Name="EN_River" ID="{EE9CB563-D70D-4FB6-BE4A-97249F51DA4A}">
+									<ChildrenList>
+										<Action Name="" ID="{6848ED56-E8BA-44CD-9A5B-855D3AA8E33A}" ShortID="122812797">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="alex_jauk-calm-zen-river-flowing-228223" ID="{359C9A7D-7F62-4B41-94EE-E45C6F9A9BC5}" WorkUnitID="{C500B7BE-B32A-4E82-9E8E-6DE001344B70}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
